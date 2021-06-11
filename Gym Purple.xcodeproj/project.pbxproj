@@ -56,6 +56,9 @@
 		C089DFDD26741D91006C47D1 /* Gym Purple */ = {
 			isa = PBXGroup;
 			children = (
+				C089DFF6267424C0006C47D1 /* Models */,
+				C089DFF5267424B7006C47D1 /* Views */,
+				C089DFF4267424AC006C47D1 /* Controller */,
 				C089DFDE26741D91006C47D1 /* AppDelegate.swift */,
 				C089DFE026741D91006C47D1 /* SceneDelegate.swift */,
 				C089DFE226741D91006C47D1 /* ViewController.swift */,
@@ -65,6 +68,27 @@
 				C089DFEC26741D93006C47D1 /* Info.plist */,
 			);
 			path = "Gym Purple";
+			sourceTree = "<group>";
+		};
+		C089DFF4267424AC006C47D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C089DFF5267424B7006C47D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C089DFF6267424C0006C47D1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
