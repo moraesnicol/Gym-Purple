@@ -15,6 +15,8 @@
 		C089DFEB26741D93006C47D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C089DFE926741D93006C47D1 /* LaunchScreen.storyboard */; };
 		C089DFF926742D4C006C47D1 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C089DFF826742D4C006C47D1 /* UIView+Extensions.swift */; };
 		C089DFFB26742D76006C47D1 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C089DFFA26742D76006C47D1 /* OnboardingSlide.swift */; };
+		C09AC2BB267525A50024FF9E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09AC2BA267525A50024FF9E /* OnboardingViewController.swift */; };
+		C09AC2BD26753B1E0024FF9E /* OnboardingCollectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09AC2BC26753B1E0024FF9E /* OnboardingCollectionCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		C089DFEC26741D93006C47D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C089DFF826742D4C006C47D1 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		C089DFFA26742D76006C47D1 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		C09AC2BA267525A50024FF9E /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		C09AC2BC26753B1E0024FF9E /* OnboardingCollectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 		C09AC2B9267524F80024FF9E /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				C09AC2BA267525A50024FF9E /* OnboardingViewController.swift */,
+				C09AC2BC26753B1E0024FF9E /* OnboardingCollectionCollectionViewCell.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -184,6 +190,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C089DFFB26742D76006C47D1 /* OnboardingSlide.swift in Sources */,
+				C09AC2BD26753B1E0024FF9E /* OnboardingCollectionCollectionViewCell.swift in Sources */,
+				C09AC2BB267525A50024FF9E /* OnboardingViewController.swift in Sources */,
 				C089DFE326741D91006C47D1 /* ViewController.swift in Sources */,
 				C089DFDF26741D91006C47D1 /* AppDelegate.swift in Sources */,
 				C089DFF926742D4C006C47D1 /* UIView+Extensions.swift in Sources */,
@@ -344,7 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.Gym-Purple";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -363,7 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.Gym-Purple";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
