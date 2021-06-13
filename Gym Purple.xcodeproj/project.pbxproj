@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3008E6B91EF12B9FE66FAC31 /* Pods_Gym_Purple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB35C0EE486F3A097E95B8A0 /* Pods_Gym_Purple.framework */; };
 		C076E5762676898100D6BABC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C076E5752676898100D6BABC /* GoogleService-Info.plist */; };
+		C076E57B26768A6F00D6BABC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C076E57A26768A6F00D6BABC /* LoginViewController.swift */; };
 		C089DFDF26741D91006C47D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C089DFDE26741D91006C47D1 /* AppDelegate.swift */; };
 		C089DFE126741D91006C47D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C089DFE026741D91006C47D1 /* SceneDelegate.swift */; };
 		C089DFE326741D91006C47D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C089DFE226741D91006C47D1 /* ViewController.swift */; };
@@ -21,7 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26FA0EEDA303A0406C65AC5C /* Pods-Gym Purple.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gym Purple.debug.xcconfig"; path = "Target Support Files/Pods-Gym Purple/Pods-Gym Purple.debug.xcconfig"; sourceTree = "<group>"; };
+		36B7988ADD8A514D792B91E4 /* Pods-Gym Purple.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gym Purple.release.xcconfig"; path = "Target Support Files/Pods-Gym Purple/Pods-Gym Purple.release.xcconfig"; sourceTree = "<group>"; };
+		AB35C0EE486F3A097E95B8A0 /* Pods_Gym_Purple.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gym_Purple.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C076E5752676898100D6BABC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C076E57A26768A6F00D6BABC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C089DFDB26741D91006C47D1 /* Gym Purple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym Purple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C089DFDE26741D91006C47D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C089DFE026741D91006C47D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3008E6B91EF12B9FE66FAC31 /* Pods_Gym_Purple.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7969FC92AB0E19B7D09F2DF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26FA0EEDA303A0406C65AC5C /* Pods-Gym Purple.debug.xcconfig */,
+				36B7988ADD8A514D792B91E4 /* Pods-Gym Purple.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C076E577267689B900D6BABC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C076E57A26768A6F00D6BABC /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		C089DFD226741D91006C47D1 = {
 			isa = PBXGroup;
 			children = (
 				C089DFDD26741D91006C47D1 /* Gym Purple */,
 				C089DFDC26741D91006C47D1 /* Products */,
+				7969FC92AB0E19B7D09F2DF3 /* Pods */,
+				D6EB3F7F2EF4BB6FCF755587 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +118,7 @@
 		C089DFF5267424B7006C47D1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C076E577267689B900D6BABC /* Login */,
 				C09AC2B9267524F80024FF9E /* Onboarding */,
 			);
 			path = Views;
@@ -122,6 +149,14 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		D6EB3F7F2EF4BB6FCF755587 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB35C0EE486F3A097E95B8A0 /* Pods_Gym_Purple.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C089DFEF26741D93006C47D1 /* Build configuration list for PBXNativeTarget "Gym Purple" */;
 			buildPhases = (
+				F27D423B8506D536297A72F6 /* [CP] Check Pods Manifest.lock */,
 				C089DFD726741D91006C47D1 /* Sources */,
 				C089DFD826741D91006C47D1 /* Frameworks */,
 				C089DFD926741D91006C47D1 /* Resources */,
+				90D04F5618B55E0CB6ADE1A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,6 +225,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		90D04F5618B55E0CB6ADE1A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gym Purple/Pods-Gym Purple-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gym Purple/Pods-Gym Purple-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gym Purple/Pods-Gym Purple-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F27D423B8506D536297A72F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gym Purple-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C089DFD726741D91006C47D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -197,6 +276,7 @@
 				C09AC2BD26753B1E0024FF9E /* OnboardingCollectionViewCell.swift in Sources */,
 				C09AC2BB267525A50024FF9E /* OnboardingViewController.swift in Sources */,
 				C089DFE326741D91006C47D1 /* ViewController.swift in Sources */,
+				C076E57B26768A6F00D6BABC /* LoginViewController.swift in Sources */,
 				C089DFDF26741D91006C47D1 /* AppDelegate.swift in Sources */,
 				C089DFF926742D4C006C47D1 /* UIView+Extensions.swift in Sources */,
 				C089DFE126741D91006C47D1 /* SceneDelegate.swift in Sources */,
@@ -343,6 +423,7 @@
 		};
 		C089DFF026741D93006C47D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26FA0EEDA303A0406C65AC5C /* Pods-Gym Purple.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -362,6 +443,7 @@
 		};
 		C089DFF126741D93006C47D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36B7988ADD8A514D792B91E4 /* Pods-Gym Purple.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

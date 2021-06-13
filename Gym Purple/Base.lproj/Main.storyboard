@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HdL-9t-OI1">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -115,15 +115,86 @@
             </objects>
             <point key="canvasLocation" x="105.79710144927537" y="83.705357142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="1UA-Gh-lkc">
             <objects>
-                <viewController id="HdL-9t-OI1" sceneMemberID="viewController">
+                <viewController id="HdL-9t-OI1" customClass="LoginViewController" customModule="Gym_Purple" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vcr-bw-bh6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundlogin" translatesAutoresizingMaskIntoConstraints="NO" id="ybk-FC-Epa">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register to save your evolution." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNp-X6-i2r">
+                                <rect key="frame" x="60" y="180" width="294" height="74"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By continuing you agree to our Terms of Use and Privacy Policies." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9g6-Q2-IkL">
+                                <rect key="frame" x="32" y="842.5" width="350" height="33.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YfU-ps-Hi4">
+                                <rect key="frame" x="20" y="338" width="374" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="0dU-8T-qB1"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2b-Kz-nth">
+                                <rect key="frame" x="20" y="436" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="C8P-kA-F7L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="CONTINUE WITHOUT ACCOUNT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemGrayColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="din-aj-zOa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="l2b-Kz-nth" firstAttribute="top" secondItem="YfU-ps-Hi4" secondAttribute="bottom" constant="38" id="3o6-NK-NQl"/>
+                            <constraint firstItem="ybk-FC-Epa" firstAttribute="leading" secondItem="din-aj-zOa" secondAttribute="leading" id="4Lu-24-sj7"/>
+                            <constraint firstItem="din-aj-zOa" firstAttribute="trailing" secondItem="PNp-X6-i2r" secondAttribute="trailing" constant="60" id="Fvz-VA-Swi"/>
+                            <constraint firstItem="YfU-ps-Hi4" firstAttribute="top" secondItem="PNp-X6-i2r" secondAttribute="bottom" constant="84" id="JGJ-8Y-J8W"/>
+                            <constraint firstItem="l2b-Kz-nth" firstAttribute="leading" secondItem="din-aj-zOa" secondAttribute="leading" constant="20" id="Roj-zY-CT7"/>
+                            <constraint firstItem="9g6-Q2-IkL" firstAttribute="leading" secondItem="din-aj-zOa" secondAttribute="leading" constant="32" id="Ulz-2w-CFs"/>
+                            <constraint firstAttribute="bottom" secondItem="9g6-Q2-IkL" secondAttribute="bottom" constant="20" id="ZOA-CJ-cJ4"/>
+                            <constraint firstItem="YfU-ps-Hi4" firstAttribute="leading" secondItem="din-aj-zOa" secondAttribute="leading" constant="20" id="ci9-uX-4Ho"/>
+                            <constraint firstItem="din-aj-zOa" firstAttribute="trailing" secondItem="YfU-ps-Hi4" secondAttribute="trailing" constant="20" id="fPU-Rh-4AG"/>
+                            <constraint firstItem="din-aj-zOa" firstAttribute="trailing" secondItem="9g6-Q2-IkL" secondAttribute="trailing" constant="32" id="hO2-L0-Ih8"/>
+                            <constraint firstItem="PNp-X6-i2r" firstAttribute="leading" secondItem="din-aj-zOa" secondAttribute="leading" constant="60" id="jh6-Ok-Uh6"/>
+                            <constraint firstItem="din-aj-zOa" firstAttribute="trailing" secondItem="l2b-Kz-nth" secondAttribute="trailing" constant="20" id="jzv-fL-Tjy"/>
+                            <constraint firstItem="ybk-FC-Epa" firstAttribute="top" secondItem="Vcr-bw-bh6" secondAttribute="top" id="lph-9K-tH2"/>
+                            <constraint firstAttribute="bottom" secondItem="ybk-FC-Epa" secondAttribute="bottom" id="xBP-bs-Ajs"/>
+                            <constraint firstItem="ybk-FC-Epa" firstAttribute="top" secondItem="PNp-X6-i2r" secondAttribute="bottom" constant="-254" id="yHZ-4g-gqp"/>
+                            <constraint firstItem="ybk-FC-Epa" firstAttribute="trailing" secondItem="din-aj-zOa" secondAttribute="trailing" id="zQ5-72-z8u"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XQd-xn-0Hk"/>
                 </viewController>
@@ -136,9 +207,14 @@
             <objects>
                 <navigationController storyboardIdentifier="loginNC" automaticallyAdjustsScrollViewInsets="NO" id="07m-Gw-tUy" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MWL-Be-54l">
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" id="MWL-Be-54l">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -152,8 +228,12 @@
     </scenes>
     <resources>
         <image name="arrow btn" width="80" height="80"/>
+        <image name="backgroundlogin" width="187.5" height="406"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
