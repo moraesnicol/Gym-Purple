@@ -13,6 +13,12 @@ class OnboardingViewController: UIViewController {
 
     @IBOutlet weak var pageControl: UIPageControl!
     
+    
+   
+   
+    @IBOutlet weak var nextPage: UIButton!
+    
+     
     var slides: [OnboardingSlide] = []
     var currentPage = 0
     
