@@ -6,17 +6,37 @@
 //
 
 import UIKit
+import Firebase
+import GoogleSignIn
 
 class LoginViewController: UIViewController {
 
    
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
+    
+    
+   
+
+    
+    @IBOutlet weak var loginBtnGoogle: UIButton!
+    
+    
+    
+    override func viewDidLoad() {
+            
+            super.viewDidLoad()
+        
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+     
         // Do any additional setup after loading the view.
     }
     
     
+    
+    
+    @IBAction func loginButtonClicked(_ sender: UIButton) {
+        GIDSignIn.sharedInstance()?.signIn()
+    }
     
 }
