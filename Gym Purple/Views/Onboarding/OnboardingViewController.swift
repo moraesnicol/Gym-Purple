@@ -13,14 +13,16 @@ class OnboardingViewController: UIViewController {
 
     @IBOutlet weak var pageControl: UIPageControl!
     
-    
-   
-   
     @IBOutlet weak var nextPage: UIButton!
     
      
     var slides: [OnboardingSlide] = []
-    var currentPage = 0
+
+    var currentPage = 0 {
+        didSet {
+            pageControl.currentPage = currentPage
+        }
+    }
     
 
            
@@ -34,24 +36,31 @@ class OnboardingViewController: UIViewController {
             OnboardingSlide(title: "Create custom workouts", description: "Create customized workouts. You have over 500 exercises to choose.", image: #imageLiteral(resourceName: "slide2")),
             OnboardingSlide(title: "Control your weight and your measurements", description: "Track your progress in charts and statistics.", image: #imageLiteral(resourceName: "slide3"))
         ]
-        pageControl.numberOfPages = 3
+        pageControl.numberOfPages = slides.count
         
     }
     
-
     
-    @IBAction func pageControlCkicked(_ sender: UIPageControl) {
+    @IBAction func nextPageClicked(_ sender: UIButton) {
         if currentPage == slides.count - 1 {
-         currentPage -= 1
-            let indexPath = IndexPath(item: currentPage, section: 0)
-            collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true);            print("Go to the next page")
+            let controller = storyboard?
+                .instantiateViewController(identifier: "loginNC") as! UINavigationController
+            
+            controller.modalPresentationStyle = .fullScreen
+            controller.modalTransitionStyle = .flipHorizontal
+                present(controller, animated: true, completion: nil)
+            
+            
         } else {
             currentPage += 1
             let indexPath = IndexPath(item: currentPage, section: 0)
             collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         }
-  
+        
     }
+    
+        
+    
 }
 
 
@@ -59,8 +68,7 @@ class OnboardingViewController: UIViewController {
 extension OnboardingViewController:
     UICollectionViewDelegate,
     UICollectionViewDataSource,
-    UICollectionViewDelegateFlowLayout,
-    UIScrollViewDelegate
+    UICollectionViewDelegateFlowLayout
     {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -83,7 +91,7 @@ extension OnboardingViewController:
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let width = scrollView.frame.width
            currentPage =  Int(scrollView.contentOffset.x / width)
-     
+        
     }
     
     

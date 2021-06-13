@@ -79,13 +79,13 @@
                                 <rect key="frame" x="146.5" y="818.5" width="121.5" height="27.5"/>
                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <action selector="pageControlCkicked:" destination="BYZ-38-t0r" eventType="valueChanged" id="QX5-Zf-Glu"/>
-                                </connections>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9v-Wb-AMY">
                                 <rect key="frame" x="318" y="728.5" width="80" height="80"/>
                                 <state key="normal" image="arrow btn"/>
+                                <connections>
+                                    <action selector="nextPageClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AzF-7F-7v1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -114,6 +114,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="105.79710144927537" y="83.705357142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1UA-Gh-lkc">
+            <objects>
+                <viewController id="HdL-9t-OI1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vcr-bw-bh6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="din-aj-zOa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XQd-xn-0Hk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JJw-dS-Yt5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1895.6521739130437" y="83.705357142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JZJ-o6-wYC">
+            <objects>
+                <navigationController storyboardIdentifier="loginNC" automaticallyAdjustsScrollViewInsets="NO" id="07m-Gw-tUy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MWL-Be-54l">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HdL-9t-OI1" kind="relationship" relationship="rootViewController" id="Ioi-DO-KzH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HgL-L7-gkI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985.50724637681162" y="83.705357142857139"/>
         </scene>
     </scenes>
     <resources>

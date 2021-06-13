@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C076E5762676898100D6BABC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C076E5752676898100D6BABC /* GoogleService-Info.plist */; };
 		C089DFDF26741D91006C47D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C089DFDE26741D91006C47D1 /* AppDelegate.swift */; };
 		C089DFE126741D91006C47D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C089DFE026741D91006C47D1 /* SceneDelegate.swift */; };
 		C089DFE326741D91006C47D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C089DFE226741D91006C47D1 /* ViewController.swift */; };
@@ -16,10 +17,11 @@
 		C089DFF926742D4C006C47D1 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C089DFF826742D4C006C47D1 /* UIView+Extensions.swift */; };
 		C089DFFB26742D76006C47D1 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C089DFFA26742D76006C47D1 /* OnboardingSlide.swift */; };
 		C09AC2BB267525A50024FF9E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09AC2BA267525A50024FF9E /* OnboardingViewController.swift */; };
-		C09AC2BD26753B1E0024FF9E /* OnboardingCollectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09AC2BC26753B1E0024FF9E /* OnboardingCollectionCollectionViewCell.swift */; };
+		C09AC2BD26753B1E0024FF9E /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09AC2BC26753B1E0024FF9E /* OnboardingCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C076E5752676898100D6BABC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C089DFDB26741D91006C47D1 /* Gym Purple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym Purple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C089DFDE26741D91006C47D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C089DFE026741D91006C47D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +33,7 @@
 		C089DFF826742D4C006C47D1 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		C089DFFA26742D76006C47D1 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		C09AC2BA267525A50024FF9E /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
-		C09AC2BC26753B1E0024FF9E /* OnboardingCollectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		C09AC2BC26753B1E0024FF9E /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				C089DFE426741D91006C47D1 /* Main.storyboard */,
 				C089DFE726741D93006C47D1 /* Assets.xcassets */,
 				C089DFE926741D93006C47D1 /* LaunchScreen.storyboard */,
+				C076E5752676898100D6BABC /* GoogleService-Info.plist */,
 				C089DFEC26741D93006C47D1 /* Info.plist */,
 			);
 			path = "Gym Purple";
@@ -114,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				C09AC2BA267525A50024FF9E /* OnboardingViewController.swift */,
-				C09AC2BC26753B1E0024FF9E /* OnboardingCollectionCollectionViewCell.swift */,
+				C09AC2BC26753B1E0024FF9E /* OnboardingCollectionViewCell.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C089DFEB26741D93006C47D1 /* LaunchScreen.storyboard in Resources */,
+				C076E5762676898100D6BABC /* GoogleService-Info.plist in Resources */,
 				C089DFE826741D93006C47D1 /* Assets.xcassets in Resources */,
 				C089DFE626741D91006C47D1 /* Main.storyboard in Resources */,
 			);
@@ -190,7 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C089DFFB26742D76006C47D1 /* OnboardingSlide.swift in Sources */,
-				C09AC2BD26753B1E0024FF9E /* OnboardingCollectionCollectionViewCell.swift in Sources */,
+				C09AC2BD26753B1E0024FF9E /* OnboardingCollectionViewCell.swift in Sources */,
 				C09AC2BB267525A50024FF9E /* OnboardingViewController.swift in Sources */,
 				C089DFE326741D91006C47D1 /* ViewController.swift in Sources */,
 				C089DFDF26741D91006C47D1 /* AppDelegate.swift in Sources */,
