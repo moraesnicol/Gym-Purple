@@ -140,21 +140,15 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vmo-QF-kUv">
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmo-QF-kUv">
                                 <rect key="frame" x="20" y="340" width="374" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="a0B-ce-zn1"/>
                                 </constraints>
-                                <state key="normal" image="btn_google_light_normal_ios">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="  CONTINUE WITH GOOGLE">
-                                            <attributes>
-                                                <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" metaFont="system" size="18"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <state key="normal" title="  CONTINUE WITH GOOGLE" image="btn_google_light_normal_ios">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium" weight="medium"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -172,10 +166,36 @@
                                     <action selector="loginButtonClicked:" destination="HdL-9t-OI1" eventType="touchUpInside" id="v3X-3u-gWN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3FE-HW-euU">
+                                <rect key="frame" x="20" y="442" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="O94-um-JEc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="c3A-j7-a8p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="CONTINUE WITHOUT ACCOUNT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginBtnWithoutClicked:" destination="HdL-9t-OI1" eventType="touchUpInside" id="bWO-9P-qdq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="din-aj-zOa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="din-aj-zOa" firstAttribute="trailing" secondItem="3FE-HW-euU" secondAttribute="trailing" constant="20" id="2mc-TZ-a8c"/>
                             <constraint firstAttribute="trailing" secondItem="ybk-FC-Epa" secondAttribute="trailing" id="3f7-ym-eo6"/>
                             <constraint firstItem="ybk-FC-Epa" firstAttribute="leading" secondItem="Vcr-bw-bh6" secondAttribute="leading" id="57b-Ji-7YQ"/>
                             <constraint firstItem="ybk-FC-Epa" firstAttribute="leading" secondItem="din-aj-zOa" secondAttribute="leading" id="5ea-6E-xDr"/>
@@ -186,17 +206,20 @@
                             <constraint firstItem="PNp-X6-i2r" firstAttribute="centerX" secondItem="9g6-Q2-IkL" secondAttribute="centerX" id="QwU-YA-CHY"/>
                             <constraint firstItem="PNp-X6-i2r" firstAttribute="top" secondItem="din-aj-zOa" secondAttribute="top" constant="92" id="TQc-Fy-5fS"/>
                             <constraint firstItem="PNp-X6-i2r" firstAttribute="leading" secondItem="din-aj-zOa" secondAttribute="leading" constant="60" id="VhN-2H-vQc"/>
+                            <constraint firstItem="3FE-HW-euU" firstAttribute="leading" secondItem="din-aj-zOa" secondAttribute="leading" constant="20" id="Yb9-ry-U0Q"/>
                             <constraint firstAttribute="bottomMargin" secondItem="9g6-Q2-IkL" secondAttribute="bottom" constant="-14" id="Yod-MA-i2J"/>
                             <constraint firstAttribute="bottom" secondItem="ybk-FC-Epa" secondAttribute="bottom" id="eFD-a3-mM4"/>
                             <constraint firstItem="ybk-FC-Epa" firstAttribute="top" secondItem="Vcr-bw-bh6" secondAttribute="top" id="jeG-AE-aFY"/>
                             <constraint firstItem="vmo-QF-kUv" firstAttribute="top" secondItem="PNp-X6-i2r" secondAttribute="bottom" constant="86" id="nw8-Td-s2q"/>
                             <constraint firstItem="PNp-X6-i2r" firstAttribute="centerX" secondItem="ybk-FC-Epa" secondAttribute="centerX" id="qrd-Wb-qqW"/>
+                            <constraint firstItem="3FE-HW-euU" firstAttribute="top" secondItem="vmo-QF-kUv" secondAttribute="bottom" constant="42" id="t9u-iM-oqy"/>
                             <constraint firstItem="vmo-QF-kUv" firstAttribute="leading" secondItem="din-aj-zOa" secondAttribute="leading" constant="20" id="x2B-nH-GBE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XQd-xn-0Hk"/>
                     <connections>
                         <outlet property="loginBtnGoogle" destination="vmo-QF-kUv" id="ahZ-ve-2WP"/>
+                        <outlet property="loginBtnWithoutAccount" destination="3FE-HW-euU" id="2zL-PI-o7d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJw-dS-Yt5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

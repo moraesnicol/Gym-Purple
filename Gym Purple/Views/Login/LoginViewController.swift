@@ -19,6 +19,10 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginBtnGoogle: UIButton!
     
     
+    @IBOutlet weak var loginBtnWithoutAccount: UIButton!
+    
+    
+    
     override func viewDidLoad() {
             super.viewDidLoad()
         GIDSignIn.sharedInstance()?.presentingViewController = self
@@ -34,6 +38,9 @@ class LoginViewController: UIViewController {
     }
 
    
+    @IBAction func loginBtnWithoutClicked(_ sender: UIButton) {
+        
+    }
     
 }
 
