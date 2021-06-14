@@ -39,7 +39,19 @@ class LoginViewController: UIViewController {
 
    
     @IBAction func loginBtnWithoutClicked(_ sender: UIButton) {
-        
+        let auth = Auth.auth()
+            .signInAnonymously { (result, error) in
+                if let error = error {
+                    print(error.localizedDescription)
+                    return
+                }
+                
+           print("sucessfuly signed anonymous")
+                let controller = self.storyboard?.instantiateViewController(withIdentifier:"HomeViewController") as! HomeViewController
+                controller.modalPresentationStyle = .fullScreen
+                controller.modalTransitionStyle = .flipHorizontal
+                self.present(controller, animated: true, completion: nil)
+        }
     }
     
 }
@@ -57,7 +69,7 @@ extension LoginViewController: GIDSignInDelegate {
         if let error = error {
         print(error.localizedDescription)
         } else {
-        print("Login Successful.")
+        print("Login Google SigIn Successful.")
             let controller = self.storyboard?.instantiateViewController(withIdentifier:"HomeViewController") as! HomeViewController
             controller.modalPresentationStyle = .fullScreen
             controller.modalTransitionStyle = .flipHorizontal
@@ -67,5 +79,6 @@ extension LoginViewController: GIDSignInDelegate {
         }
             
         }
+       
     }
 }
