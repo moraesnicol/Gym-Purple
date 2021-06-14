@@ -86,8 +86,6 @@ extension OnboardingViewController:
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
     
-   //
-    
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let width = scrollView.frame.width
            currentPage =  Int(scrollView.contentOffset.x / width)

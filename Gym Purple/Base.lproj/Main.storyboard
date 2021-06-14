@@ -13,11 +13,11 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="Gym_Purple" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="n9w-qA-y2C">
+                            <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="n9w-qA-y2C">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Vnb-pa-pfm">
                                     <size key="itemSize" width="414" height="891"/>
@@ -26,14 +26,14 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" id="mfy-fI-S2R" customClass="OnboardingCollectionViewCell" customModule="Gym_Purple" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="OnboardingCollectionViewCell" id="mfy-fI-S2R" customClass="OnboardingCollectionViewCell" customModule="Gym_Purple" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="2.5" width="414" height="891"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="32w-CI-npB">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="32w-CI-npB">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="891"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="edB-0o-IZE">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="edB-0o-IZE">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="891"/>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xvW-uG-lXH">
@@ -78,31 +78,30 @@
                                 </connections>
                             </collectionView>
                             <pageControl opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="uuG-Ai-3dj">
-                                <rect key="frame" x="146.5" y="818.5" width="121.5" height="27.5"/>
+                                <rect key="frame" x="146.5" y="852.5" width="121.5" height="27.5"/>
                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9v-Wb-AMY">
-                                <rect key="frame" x="318" y="728.5" width="80" height="80"/>
+                                <rect key="frame" x="318" y="762.5" width="80" height="80"/>
                                 <state key="normal" image="arrow btn"/>
                                 <connections>
                                     <action selector="nextPageClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AzF-7F-7v1"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q9v-Wb-AMY" secondAttribute="trailing" constant="16" id="3t3-Eo-9Hv"/>
-                            <constraint firstItem="n9w-qA-y2C" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8wY-7V-UAS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uuG-Ai-3dj" secondAttribute="bottom" constant="16" id="J61-Zb-gt8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q9v-Wb-AMY" secondAttribute="trailing" constant="16" id="J8G-Y2-aDX"/>
-                            <constraint firstItem="n9w-qA-y2C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JOv-iZ-BSb"/>
-                            <constraint firstItem="n9w-qA-y2C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MwW-Tb-7Jd"/>
+                            <constraint firstAttribute="trailing" secondItem="Q9v-Wb-AMY" secondAttribute="trailing" constant="16" id="3t3-Eo-9Hv"/>
+                            <constraint firstItem="n9w-qA-y2C" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="8wY-7V-UAS"/>
+                            <constraint firstAttribute="bottom" secondItem="uuG-Ai-3dj" secondAttribute="bottom" constant="16" id="J61-Zb-gt8"/>
+                            <constraint firstAttribute="trailing" secondItem="Q9v-Wb-AMY" secondAttribute="trailing" constant="16" id="J8G-Y2-aDX"/>
+                            <constraint firstItem="n9w-qA-y2C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JOv-iZ-BSb"/>
+                            <constraint firstItem="n9w-qA-y2C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MwW-Tb-7Jd"/>
                             <constraint firstItem="n9w-qA-y2C" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Psv-Sy-Ofp"/>
                             <constraint firstItem="uuG-Ai-3dj" firstAttribute="top" secondItem="Q9v-Wb-AMY" secondAttribute="bottom" constant="10" id="U9q-2j-BxQ"/>
                             <constraint firstItem="n9w-qA-y2C" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dBB-hC-AkZ"/>
                             <constraint firstAttribute="bottom" secondItem="n9w-qA-y2C" secondAttribute="bottom" id="jZg-ZD-dne"/>
-                            <constraint firstItem="uuG-Ai-3dj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mWn-Mf-0Zp"/>
+                            <constraint firstItem="uuG-Ai-3dj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mWn-Mf-0Zp"/>
                             <constraint firstAttribute="bottom" secondItem="n9w-qA-y2C" secondAttribute="bottom" id="v1y-lH-dUn"/>
                         </constraints>
                     </view>
@@ -160,7 +159,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="24"/>
+                                        <real key="value" value="28"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
                                         <real key="value" value="2"/>
@@ -204,6 +203,22 @@
             </objects>
             <point key="canvasLocation" x="1895.6521739130437" y="83.705357142857139"/>
         </scene>
+        <!--Home View Controller-->
+        <scene sceneID="Vcc-aC-GwK">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="C3w-G3-PeJ" customClass="HomeViewController" customModule="Gym_Purple" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ejn-XO-gqD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="sfp-C3-MDz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ngh-Qs-3mW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5j6-kV-Kf6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3744.9275362318845" y="83.705357142857139"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="JZJ-o6-wYC">
             <objects>
@@ -226,6 +241,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HgL-L7-gkI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="985.50724637681162" y="83.705357142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kAv-bL-9Iw">
+            <objects>
+                <navigationController storyboardIdentifier="homeNC" automaticallyAdjustsScrollViewInsets="NO" id="q4C-DR-a4F" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HMa-Gc-g28">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="C3w-G3-PeJ" kind="relationship" relationship="rootViewController" id="gmH-zR-pvJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ndJ-VT-G1n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2834.7826086956525" y="83.705357142857139"/>
         </scene>
     </scenes>
     <resources>
