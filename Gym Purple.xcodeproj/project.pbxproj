@@ -10,6 +10,8 @@
 		3008E6B91EF12B9FE66FAC31 /* Pods_Gym_Purple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB35C0EE486F3A097E95B8A0 /* Pods_Gym_Purple.framework */; };
 		C00A312A2676C41C008E05F5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00A31292676C41C008E05F5 /* HomeViewController.swift */; };
 		C00A312C2676C6CE008E05F5 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00A312B2676C6CE008E05F5 /* UIViewController+Extension.swift */; };
+		C00A312E2676FF8D008E05F5 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00A312D2676FF8D008E05F5 /* Workout.swift */; };
+		C0127CDC26783FAE000BA95F /* AddWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0127CDB26783FAE000BA95F /* AddWorkoutViewController.swift */; };
 		C076E5762676898100D6BABC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C076E5752676898100D6BABC /* GoogleService-Info.plist */; };
 		C076E57B26768A6F00D6BABC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C076E57A26768A6F00D6BABC /* LoginViewController.swift */; };
 		C089DFDF26741D91006C47D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C089DFDE26741D91006C47D1 /* AppDelegate.swift */; };
@@ -29,6 +31,8 @@
 		AB35C0EE486F3A097E95B8A0 /* Pods_Gym_Purple.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gym_Purple.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00A31292676C41C008E05F5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C00A312B2676C6CE008E05F5 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		C00A312D2676FF8D008E05F5 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		C0127CDB26783FAE000BA95F /* AddWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutViewController.swift; sourceTree = "<group>"; };
 		C076E5752676898100D6BABC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C076E57A26768A6F00D6BABC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C089DFDB26741D91006C47D1 /* Gym Purple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym Purple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +75,14 @@
 				C00A31292676C41C008E05F5 /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		C0127CDA26783CA4000BA95F /* AddWorkout */ = {
+			isa = PBXGroup;
+			children = (
+				C0127CDB26783FAE000BA95F /* AddWorkoutViewController.swift */,
+			);
+			path = AddWorkout;
 			sourceTree = "<group>";
 		};
 		C076E577267689B900D6BABC /* Login */ = {
@@ -127,6 +139,7 @@
 		C089DFF5267424B7006C47D1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C0127CDA26783CA4000BA95F /* AddWorkout */,
 				C00A31282676C3E9008E05F5 /* Home */,
 				C076E577267689B900D6BABC /* Login */,
 				C09AC2B9267524F80024FF9E /* Onboarding */,
@@ -138,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				C089DFFA26742D76006C47D1 /* OnboardingSlide.swift */,
+				C00A312D2676FF8D008E05F5 /* Workout.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -306,7 +320,9 @@
 				C09AC2BD26753B1E0024FF9E /* OnboardingCollectionViewCell.swift in Sources */,
 				C09AC2BB267525A50024FF9E /* OnboardingViewController.swift in Sources */,
 				C00A312A2676C41C008E05F5 /* HomeViewController.swift in Sources */,
+				C00A312E2676FF8D008E05F5 /* Workout.swift in Sources */,
 				C076E57B26768A6F00D6BABC /* LoginViewController.swift in Sources */,
+				C0127CDC26783FAE000BA95F /* AddWorkoutViewController.swift in Sources */,
 				C089DFDF26741D91006C47D1 /* AppDelegate.swift in Sources */,
 				C089DFF926742D4C006C47D1 /* UIView+Extensions.swift in Sources */,
 				C089DFE126741D91006C47D1 /* SceneDelegate.swift in Sources */,
