@@ -8,22 +8,49 @@
 import UIKit
 
 class AddWorkoutViewController: UIViewController {
-
+    
+    
+    
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    
+    @IBOutlet weak var commentTextField: UITextField!
+    
+    @IBOutlet weak var saveBtn: UIButton!
+    
+    
+    @IBOutlet weak var cancelBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func nameTextFieldEdited(_ sender: UITextField) {
     }
-    */
-
+    
+    @IBAction func commentTextFieldEdited(_ sender: Any) {
+    }
+    
+    @IBAction func saveBtnClicked(_ sender: Any) {
+    }
+    
+    @IBAction func cancelBtnClicked(_ sender: Any) {
+        
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        
+        controller.modalPresentationStyle =
+            .fullScreen
+        controller.modalTransitionStyle =
+            .coverVertical
+        
+        
+        present(controller, animated: true, completion: nil)
+            
+      
+    }
+    
+    
 }

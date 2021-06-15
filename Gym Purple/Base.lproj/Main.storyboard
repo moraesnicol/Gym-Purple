@@ -294,6 +294,7 @@
                             <constraint firstItem="ib1-NG-bcA" firstAttribute="top" secondItem="ejn-XO-gqD" secondAttribute="top" constant="35" id="zCk-5d-fKy"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="PYq-OM-hfG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5j6-kV-Kf6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -351,6 +352,9 @@
                                                 <color key="value" systemColor="systemGrayColor"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="nameTextFieldEdited:" destination="o1a-By-c6i" eventType="editingDidEnd" id="ftt-2b-wkf"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfa-8f-MiQ">
                                         <rect key="frame" x="19" y="302" width="47" height="18"/>
@@ -376,6 +380,9 @@
                                                 <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="commentTextFieldEdited:" destination="o1a-By-c6i" eventType="editingDidEnd" id="WlW-3W-3px"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syq-Z7-MFX">
                                         <rect key="frame" x="271" y="407" width="38" height="30"/>
@@ -384,6 +391,9 @@
                                         <state key="normal" title="SAVE">
                                             <color key="titleColor" red="0.50033826660000003" green="0.28143341719999998" blue="0.79477030039999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="saveBtnClicked:" destination="o1a-By-c6i" eventType="touchUpInside" id="HGK-nG-yLZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10i-Dd-XJI">
                                         <rect key="frame" x="176" y="407" width="60" height="30"/>
@@ -392,6 +402,9 @@
                                         <state key="normal" title="CANCEL">
                                             <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="cancelBtnClicked:" destination="o1a-By-c6i" eventType="touchUpInside" id="QJc-p6-6bX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -406,6 +419,12 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="A1n-g2-gYx"/>
+                    <connections>
+                        <outlet property="cancelBtn" destination="10i-Dd-XJI" id="ULg-m6-LQI"/>
+                        <outlet property="commentTextField" destination="s0p-5e-ZyV" id="T1z-t6-BYX"/>
+                        <outlet property="nameTextField" destination="xHT-9g-rNl" id="K2d-7d-5Uo"/>
+                        <outlet property="saveBtn" destination="syq-Z7-MFX" id="Tve-hy-ZHq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hBO-Ua-ahS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
