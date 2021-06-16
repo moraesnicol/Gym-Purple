@@ -23,6 +23,8 @@
 		C089DFFB26742D76006C47D1 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C089DFFA26742D76006C47D1 /* OnboardingSlide.swift */; };
 		C09AC2BB267525A50024FF9E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09AC2BA267525A50024FF9E /* OnboardingViewController.swift */; };
 		C09AC2BD26753B1E0024FF9E /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09AC2BC26753B1E0024FF9E /* OnboardingCollectionViewCell.swift */; };
+		C0AF1AA6267AC1FE00C0AAD0 /* WorkoutsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF1AA4267AC1FE00C0AAD0 /* WorkoutsCollectionViewCell.swift */; };
+		C0AF1AA7267AC1FE00C0AAD0 /* WorkoutsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0AF1AA5267AC1FE00C0AAD0 /* WorkoutsCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		C089DFFA26742D76006C47D1 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		C09AC2BA267525A50024FF9E /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		C09AC2BC26753B1E0024FF9E /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		C0AF1AA4267AC1FE00C0AAD0 /* WorkoutsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorkoutsCollectionViewCell.swift; path = ../../../../../../../WorkoutsCollectionViewCell.swift; sourceTree = "<group>"; };
+		C0AF1AA5267AC1FE00C0AAD0 /* WorkoutsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WorkoutsCollectionViewCell.xib; path = ../../../../../../../WorkoutsCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +121,7 @@
 				C089DFF726742D2A006C47D1 /* Extensions */,
 				C089DFF6267424C0006C47D1 /* Models */,
 				C089DFF5267424B7006C47D1 /* Views */,
-				C089DFF4267424AC006C47D1 /* Controller */,
+				C089DFF4267424AC006C47D1 /* CustomViews */,
 				C089DFDE26741D91006C47D1 /* AppDelegate.swift */,
 				C089DFE026741D91006C47D1 /* SceneDelegate.swift */,
 				C089DFE426741D91006C47D1 /* Main.storyboard */,
@@ -129,11 +133,12 @@
 			path = "Gym Purple";
 			sourceTree = "<group>";
 		};
-		C089DFF4267424AC006C47D1 /* Controller */ = {
+		C089DFF4267424AC006C47D1 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				C0AF1AA3267AC18900C0AAD0 /* WorkoutsCollectionsViewsCells */,
 			);
-			path = Controller;
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		C089DFF5267424B7006C47D1 /* Views */ = {
@@ -172,6 +177,15 @@
 				C09AC2BC26753B1E0024FF9E /* OnboardingCollectionViewCell.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		C0AF1AA3267AC18900C0AAD0 /* WorkoutsCollectionsViewsCells */ = {
+			isa = PBXGroup;
+			children = (
+				C0AF1AA4267AC1FE00C0AAD0 /* WorkoutsCollectionViewCell.swift */,
+				C0AF1AA5267AC1FE00C0AAD0 /* WorkoutsCollectionViewCell.xib */,
+			);
+			path = WorkoutsCollectionsViewsCells;
 			sourceTree = "<group>";
 		};
 		D6EB3F7F2EF4BB6FCF755587 /* Frameworks */ = {
@@ -244,6 +258,7 @@
 			files = (
 				C089DFEB26741D93006C47D1 /* LaunchScreen.storyboard in Resources */,
 				C076E5762676898100D6BABC /* GoogleService-Info.plist in Resources */,
+				C0AF1AA7267AC1FE00C0AAD0 /* WorkoutsCollectionViewCell.xib in Resources */,
 				C089DFE826741D93006C47D1 /* Assets.xcassets in Resources */,
 				C089DFE626741D91006C47D1 /* Main.storyboard in Resources */,
 			);
@@ -319,6 +334,7 @@
 				C089DFFB26742D76006C47D1 /* OnboardingSlide.swift in Sources */,
 				C09AC2BD26753B1E0024FF9E /* OnboardingCollectionViewCell.swift in Sources */,
 				C09AC2BB267525A50024FF9E /* OnboardingViewController.swift in Sources */,
+				C0AF1AA6267AC1FE00C0AAD0 /* WorkoutsCollectionViewCell.swift in Sources */,
 				C00A312A2676C41C008E05F5 /* HomeViewController.swift in Sources */,
 				C00A312E2676FF8D008E05F5 /* Workout.swift in Sources */,
 				C076E57B26768A6F00D6BABC /* LoginViewController.swift in Sources */,

@@ -23,11 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         //Firebase
         FirebaseApp.configure()
-        let db = Firestore.firestore()
+        
         
         //firestoretest
         //adding
-        db.collection("workout-test").addDocument(data: ["nome" : "flexão", "description": "subir e descer o corpo"])
+      
         
         //Google
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
