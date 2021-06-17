@@ -9,9 +9,12 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    override func viewDidLoad() {
+    
+    
+
+       override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Gym Purple"
+       
         // Do any additional setup after loading the view.
     }
     

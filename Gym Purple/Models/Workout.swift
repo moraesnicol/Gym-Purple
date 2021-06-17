@@ -12,10 +12,9 @@ import UIKit
 
 
 
-struct WorkoutModel {
+struct WorkoutList {
    
-    let name: Int
-    let description: String
+    let name, description, image: String
     let data: Date
 }
 

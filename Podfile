@@ -10,5 +10,6 @@ target 'Gym Purple' do
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
   pod 'Firebase/Firestore'
+  pod 'Kingfisher'
 
 end

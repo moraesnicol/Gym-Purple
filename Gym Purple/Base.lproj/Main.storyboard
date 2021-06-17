@@ -336,14 +336,6 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="RWg-3k-axe"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="153-qe-wwN"/>
                             </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Workouts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sJw-gx-8fC">
-                                <rect key="frame" x="24" y="348" width="105" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sfp-C3-MDz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -357,7 +349,6 @@
                             <constraint firstItem="GyQ-bc-nCz" firstAttribute="leading" secondItem="sfp-C3-MDz" secondAttribute="leading" constant="312" id="Tw2-6d-s0o"/>
                             <constraint firstAttribute="bottom" secondItem="25P-DV-Ynm" secondAttribute="bottom" id="f22-Iq-rvv"/>
                             <constraint firstItem="25P-DV-Ynm" firstAttribute="leading" secondItem="sfp-C3-MDz" secondAttribute="leading" id="mEb-OF-lnX"/>
-                            <constraint firstItem="sJw-gx-8fC" firstAttribute="top" secondItem="cjR-ZA-Ab5" secondAttribute="bottom" constant="162" id="pG1-4k-7eR"/>
                             <constraint firstItem="ib1-NG-bcA" firstAttribute="leading" secondItem="sfp-C3-MDz" secondAttribute="leading" constant="79" id="tK0-8M-641"/>
                             <constraint firstItem="GyQ-bc-nCz" firstAttribute="top" secondItem="ib1-NG-bcA" secondAttribute="bottom" constant="62" id="vF8-s0-wkt"/>
                             <constraint firstItem="cjR-ZA-Ab5" firstAttribute="leading" secondItem="sfp-C3-MDz" secondAttribute="leading" id="wTm-TM-GD8"/>
